@@ -12,7 +12,7 @@ Data Structures/Concepts Used:
 Queues, Structs, Object Oriented Programming (OOP), File I/O, Header and cpp files
 
 
-Output
+Output:
 ======
 	NUMBER-OF-CUSTOMERS-SERVED:10
 	LONGEST-BREAK-LENGTH:9905
@@ -28,8 +28,58 @@ Output
 	() Not for Redistribution or Reuse.
 	
 	Press any key to continue . . .
-		
-		
+	
+Input:
+======
+#####queriesfile.txt
+	NUMBER-OF-CUSTOMERS-SERVED
+	LONGEST-BREAK-LENGTH
+	TOTAL-IDLE-TIME
+	MAXIMUM-NUMBER-OF-PEOPLE-IN-QUEUE-AT-ANY-TIME
+	WAITING-TIME-OF 1
+	WAITING-TIME-OF 2
+	WAITING-TIME-OF 3
+	WAITING-TIME-OF 7
+#####customersfile.txt
+	300
+	
+	ID-NUMBER:  1
+	ARRIVAL-TIME: 8:30:17
+	
+	ID-NUMBER:  2
+	ARRIVAL-TIME: 8:55:32
+	
+	ID-NUMBER:  3
+	ARRIVAL-TIME: 9:30:00
+	
+	ID-NUMBER:  4
+	ARRIVAL-TIME: 11:35:10
+	
+	ID-NUMBER:  5
+	ARRIVAL-TIME: 11:36:17
+	
+	ID-NUMBER:  6
+	ARRIVAL-TIME: 11:37:27
+	
+	ID-NUMBER:  7
+	ARRIVAL-TIME: 11:38:45
+	
+	ID-NUMBER:  8
+	ARRIVAL-TIME: 2:40:15
+	
+	ID-NUMBER:  9
+	ARRIVAL-TIME: 3:38:38
+	
+	ID-NUMBER:  10
+	ARRIVAL-TIME: 4:56:39
+	
+	ID-NUMBER:  11
+	ARRIVAL-TIME: 4:57:12
+	
+	ID-NUMBER:  12
+	ARRIVAL-TIME: 4:58:00
+			
+			
 Statement of the Problem:  
 =========================
 
@@ -68,14 +118,14 @@ You are guaranteed that the arrival times of the customers in customersfile.txt 
 
 The second input file, called queriesfile.txt, will have a sequence of queries, one query per line, where the queries can be:
 
-WAITING-TIME-OF customer-id                    // measured in seconds
-NUMBER-OF-CUSTOMERS-SERVED
-LONGEST-BREAK-LENGTH                      // measured in seconds
-TOTAL-IDLE-TIME                                       // measured in seconds
-MAXIMUM-NUMBER-OF-PEOPLE-IN-QUEUE-AT-ANY-TIME  
-Note that there could be many queries beginning with WAITING-TIME-OF but ending with different id numbers. 
+WAITING-TIME-OF customer-id                    // measured in seconds    
+NUMBER-OF-CUSTOMERS-SERVED   
+LONGEST-BREAK-LENGTH                      // measured in seconds   
+TOTAL-IDLE-TIME                                       // measured in seconds    
+MAXIMUM-NUMBER-OF-PEOPLE-IN-QUEUE-AT-ANY-TIME          
+Note that there could be many queries beginning with WAITING-TIME-OF but ending with different id numbers.         
 
-The output:
+The output:       
 
 Your program must take as input the two input files above, in that order. That is, we should be able to compile your program into an executable file (called Program2, say), then call it from the command-line like this: 
 >> Program2 customersfile.txt queriesfile.txt
