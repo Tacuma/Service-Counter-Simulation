@@ -34,6 +34,8 @@ Statement of the Problem:
 =========================
 
 ####This assignment involves modeling a group of customers and a service-counter on a typical day from 9am to 5pm, using queues and other structures. 
+##### Input files: customersfile.txt, queriesfile.txt
+
 Different customers come to the service counter at different times to get some service
 (get their gifts wrapped, say), and assume for simplicity that the service time per customer is some constant T. The service is first-come first-serve. Given as input a group of customers along with an arrival time for each customer, the kinds of questions (or queries) that your program should be able to answer are:
 
